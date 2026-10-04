@@ -6,21 +6,32 @@
     <title>Junseong Park - Portfolio</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 0 auto; max-width: 800px; padding: 40px 20px; color: #333; }
-        h1 { color: #cc0033; /* Rutgers Red */ }
+        h1 { color: #cc0033; margin-top: 0; }
         h2 { border-bottom: 2px solid #cc0033; padding-bottom: 10px; margin-top: 30px; }
         .section { margin-bottom: 40px; }
+        
+        /* New Header Styles */
+        .header-content { display: flex; align-items: center; gap: 30px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #cc0033; flex-shrink: 0; }
+        
         .project { margin-bottom: 20px; padding: 20px; border: 1px solid #e1e4e8; border-radius: 6px; background-color: #f9f9f9; }
         .project h3 { margin-top: 0; }
         ul { padding-left: 20px; }
         a { color: #0056b3; text-decoration: none; }
         a:hover { text-decoration: underline; }
+
+        /* Responsive design for mobile devices */
+        @media (max-width: 600px) {
+            .header-content { flex-direction: column; text-align: center; }
+        }
     </style>
 </head>
 <body>
 
     <header class="section">
+        <div class="header-content">
+            <img src="headshot.jpg" alt="Junseong Park Headshot" class="profile-img">
         <h1>Junseong Park</h1>
-        <!-- 2 Points: Personal Statement -->
         <p><strong>Personal Statement:</strong> Student at Rutgers Business School double majoring in Business Analytics & Information Technology and Leadership & Management with a strong interest in entrepreneurship and economics. As an international student from South Korea, I bring a global perspective and a commitment to developing effective leadership skills in a professional environment.
 
 </p>
@@ -38,7 +49,6 @@
     </section>
 
     <section class="section">
-        <!-- 2 Points: Projects Section -->
         <h2>Projects</h2>
         
         <div class="project">
